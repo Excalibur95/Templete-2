@@ -1,0 +1,60 @@
+\documentclass[answers]{exam}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage[round, sort&compress, numbers,square]{natbib}
+% Math packages
+\usepackage{mathrsfs}       
+\raggedbottom 
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+\usepackage[spanish,mexico]{babel}
+\usepackage[ pdftex, plainpages = false, pdfpagelabels, 
+pdfpagelayout = OneColumn, % display single page, advancing flips the page - Sasa Tomic
+bookmarks,
+bookmarksopen = true,
+bookmarksnumbered = true,
+breaklinks = true,
+linktocpage,
+pagebackref,
+colorlinks = true,
+linkcolor = blue,
+urlcolor  = blue,
+citecolor = red,
+anchorcolor = green,
+hyperindex = true,
+hyperfigures
+]{hyperref} 
+
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+	\normalfont \normalsize 
+	\textsc{Facultad de Ciencias Físico Matemáticas BUAP} \\
+	Asignatura: Teoría Electromagnética\\[25pt] % Your university, school and/or department name(s)
+	\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+	\huge Tarea 2 \\ % The assignment title
+	\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+\author{Carlos Augusto Flores Meneses} % Your name
+\date{\normalsize\today} % Today's date or a custom date
+\begin{document}
+	\maketitle % Print the title
+
+\input{macros}
+
+\begin{questions}
+	\question{
+		Prove naive set theory inconsistent
+	}
+	
+	\begin{solution}\renewcommand{\qedsymbol}{}
+		\begin{proof}
+			Consider the set $S = \{ X | X \notin X \}$
+			$$S \in S \iff S \notin S$$.
+		\end{proof}
+	\end{solution}
+\end{questions}
+
+\end{document}
